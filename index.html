@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>lola4lexie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="vynil.png">
+</head>
+<body>
+  <h1>for lexie <3</h1>
+  <div class="tapes-container">
+    <img src="fita-cassete.png" alt="to get to know me" class="tape" onclick="showPlaylist(1)" />
+    <img src="fita-cassete (1).png" alt="us" class="tape" onclick="showPlaylist(2)" />
+    <img src="fita-cassete (2).png" alt="3" class="tape" onclick="showPlaylist(3)" />
+    <!-- Pode adicionar mais fitas aqui -->
+  </div>
+
+  <div id="playlist" class="hidden">
+    <div id="playlistContentContainer">
+      <button onclick="closePlaylist()">Fechar</button>
+      <h2 id="playlistTitle"></h2>
+      <div id="playlistContent"></div>
+    </div>
+  </div>
+
+  <div class="photo-strip">
+    <div class="film-frame" onclick="openPhoto('pics/lexie.jpeg')">
+      <img src="pics/lexie.jpeg" alt="her" />
+    </div>
+    <div class="film-frame" onclick="openPhoto('pics/lexielola (4).jpeg')">
+      <img src="pics/lexielola (4).jpeg" alt="us" />
+    </div>
+    <div class="film-frame" onclick="openPhoto('pics/lexie (3).jpeg')">
+      <img src="pics/lexie (3).jpeg" class="top-crop" alt="her" />
+    </div>
+    <div class="film-frame" onclick="openPhoto('pics/lexielola (5).jpeg')">
+      <img src="pics/lexielola (5).jpeg" alt="us" />
+    </div>
+    <div class="film-frame" onclick="openPhoto('pics/lexie (2).jpeg')">
+      <img src="pics/lexie (2).jpeg" alt="her" />
+    </div>
+  </div>
+
+  <div id="photoPopup" class="hidden">
+    <div id="photoPopupContent">
+      <button onclick="closePhoto()">Fechar</button>
+      <img id="popupImage" src="" alt="Foto ampliada" />
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
